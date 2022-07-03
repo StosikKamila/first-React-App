@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import Forms from'./components/Forms';
+import Like from './components/Like';
 import './App.css';
+import ToDo from './components/ToDo'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    function App () {
+      return (
+        <div className="container">
+          <div idName="Form"> {<Forms/>}</div>
+          <div idName="ToDo"> {<ToDo/>}</div>
+          <div idName="Like">{<Like/>}</div>
+
+
+        
+      </div>
+     )
+    }
+    
+
 
 export default App;
